@@ -39,7 +39,7 @@ body {
     display: flex;
     gap: 50px;
     font-weight: bolder;
-    font-size: 13px;
+    font-size: 18px;
     align-items: center;
     margin-top: 20px;
 }
@@ -97,7 +97,9 @@ a {
 
 }
 
-
+.nav .menu .active{
+    color: #e867ad;
+}
 
 .info{
     display: flex;
@@ -179,7 +181,10 @@ a {
       .menu ul {
         padding: 3px 8px;
         border-radius: 5px;
-        box-shadow: -1px 0px 0px 0px rgb(247 31 229);
+       
+    }
+    .info{
+        width:90%;
     }
 
       .navbar {

@@ -92,7 +92,17 @@ a {
     height: 340px;
     border-radius: 50%;
     box-shadow: 0px 0px 3px 5px #fc4ed0;
+    
 
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .apropos span {
@@ -188,7 +198,7 @@ margin-bottom: 25px;
          color: rgb(241, 113, 134);
         font-weight: bolder;
         margin-left: 20px;
-        font-size: 20px;
+        font-size: 16px;
     }
     .about i {
         color: rgb(241, 113, 134);
@@ -234,6 +244,7 @@ margin-bottom: 25px;
     .photo img {
         width: 220px;
         height: 210px;
+        
     }
 
     .nav .menu ul {
@@ -258,9 +269,12 @@ margin-bottom: 25px;
 
     .btn {
         margin-bottom: 25px;
+        gap: 30px;
     }
 
     .btn1, .btn2 {
         padding: 8px 13px;
+        margin-left: 20px;
+        
     }
 }

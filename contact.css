@@ -32,6 +32,12 @@ body {
     font-family: cursive;
 }
 
+.rotation{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #f55db1;
+}
 
 .nav .menu ul {
     display: flex;
@@ -69,7 +75,7 @@ a {
     display: flex;
     width: 100%;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
 }
 
@@ -124,11 +130,16 @@ textarea {
     padding: 20px 0;
 }
 
+.nav .menu .active{
+    color: #e867ad;
+}
+
 .contact h1 {
     font-size: 25px;
     font-family: monospace;
     margin: 5px 10px;
     color:#f55db1;
+    position: relative;
 }
 
 .send {
@@ -193,24 +204,33 @@ textarea {
     .contenu {
         border: none;
         display: flex;
-        border: 1px solid #1b1b18;
         flex-direction: column;
         width: 90%;
         align-items: normal;
     }
+input{
+    padding: 10px 0;
+    width: 100%;
+}
+
+textarea , .send{
+    width: 100%;
+}
 
     .contact,
     .sociaux {
         max-width: 100%;
         width: 100%;
+        padding: 0;
     }
 
     #bars {
         display: block;
     }
 
-    .relation {
+    .relation , .contact h1{
         font-size: 16px;
+        margin-top: 10px;
     }
 
 
@@ -220,11 +240,10 @@ textarea {
     }
 
     .nav .menu ul {
-        font-size: 12px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 400;
         padding: 3px 8px;
         border-radius: 5px;
-        box-shadow: -1px 0px 0px 0px rgb(247 31 229);
         margin-top: 40px;
         display: none;
     }
@@ -236,5 +255,11 @@ textarea {
     .navbar {
         margin-right: -15px;
     }
+
+    .relation h6{
+        text-align: center;
+        color:#f55db1;
+    }
+
 
 }
